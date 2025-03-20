@@ -37,7 +37,7 @@ export default function Main() {
                     </li>
                     <li>
                         <a href="">
-                            <img src="/img/buy-comics-power-visa.svg" alt="" />
+                            <img src="/img/buy-dc-power-visa.svg" alt="" />
                             <span>DC POWER VISA</span>
                         </a>
                     </li>
