@@ -48,7 +48,6 @@ export default function () {
                         </ul>
                     </div>
                     <div className="bg_logo">
-                        <img src="/img/dc-logo-bg.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -57,7 +56,7 @@ export default function () {
 
                 <div className="footer_down">
                     <div className="btn">
-                        <button>SIGN-UP NOW</button>
+                        <button className="sign_up">SIGN-UP NOW!</button>
                     </div>
                     <div className="follow">
                         <ul>

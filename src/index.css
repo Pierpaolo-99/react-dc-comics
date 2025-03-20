@@ -106,7 +106,6 @@ footer {
   .container_up {
     background-image: url(/img/footer-bg.jpg);
     background-size: cover;
-    position: relative;
 
     .footer_up {
       width: 80%;
@@ -115,10 +114,8 @@ footer {
       min-height: 370px;
       display: flex;
       gap: 1.5rem;
-      z-index: -1;
 
       .col {
-        z-index: 3;
 
         h3 {
           color: var(--dc-light);
@@ -136,9 +133,9 @@ footer {
       }
 
       .bg_logo {
-        position: absolute;
-        top: -100px;
-        right: 10%;
+        width: 100%;
+        background-image: url('/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
       }
 
     }
@@ -155,6 +152,23 @@ footer {
       justify-content: space-between;
       align-items: center;
 
+      .btn {
+
+        .sign_up {
+          padding: 1rem;
+          background-color: var(--dc-secondary);
+          color: var(--dc-light);
+          border: 2px solid var(--dc-primary);
+          font-weight: 600;
+        }
+
+        :hover {
+          background-color: var(--dc-primary);
+          cursor: pointer;
+        }
+
+      }
+
       ul {
         list-style: none;
         display: flex;
@@ -163,7 +177,7 @@ footer {
         gap: 1rem;
 
         h3 {
-          color: var(--dc-light);
+          color: var(--dc-primary);
         }
       }
     }
