@@ -11,7 +11,7 @@ export default function Header() {
 
                 <ul className="menu">
                     <li><a href="">CHARACTERS</a></li>
-                    <li><a href="">COMICS</a></li>
+                    <li><a className="active" href="">COMICS</a></li>
                     <li><a href="">MOVIES</a></li>
                     <li><a href="">TV</a></li>
                     <li><a href="">GAMES</a></li>

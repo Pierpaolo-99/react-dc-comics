@@ -41,8 +41,10 @@ header {
       font-weight: 600;
       color: var(--dc-dark);
       position: relative;
+      display: flex;
+      align-items: center;
 
-      a::after {
+      &::after {
         content: "";
         display: block;
         width: 100%;
@@ -51,9 +53,19 @@ header {
         left: 0;
         bottom: -1rem;
         background-color: var(--dc-primary);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &.active,
+      &:hover {
+        color: var(--dc-primary);
+
+        &::after {
+          opacity: 1;
+        }
       }
     }
-
   }
 }
 
