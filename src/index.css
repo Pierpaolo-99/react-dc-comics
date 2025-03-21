@@ -50,18 +50,31 @@ header {
 
 Main {
 
-  .container_contents {
+  .container_jumbotron {
 
     background-image: url(/img/jumbotron.jpg);
     background-size: cover;
     height: 40vh;
     display: flex;
     align-items: center;
+    position: relative;
 
-    .content {
+    .jumbotron {
       width: 80%;
       margin: auto;
       padding: 1rem;
+
+      .label {
+        color: var(--dc-light);
+        padding: 0.5rem 1.5rem;
+        background-color: var(--dc-primary);
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: inline-block;
+        position: absolute;
+        bottom: -1.5rem;
+        left: 18%;
+      }
 
       h2 {
         color: var(--dc-light);
@@ -72,11 +85,31 @@ Main {
 
   .comicsList {
     background-color: var(--dc-dark);
+    padding: 3rem 0;
 
     .container {
       width: 60%;
       max-width: 1400px;
       margin: auto
+    }
+
+    .btn_load {
+      text-align: center;
+
+      button {
+        padding: 1rem 5rem;
+        background-color: var(--dc-primary);
+        color: var(--dc-light);
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      :hover {
+        background-color: var(--dc-secondary);
+        cursor: pointer;
+      }
     }
 
     .row {

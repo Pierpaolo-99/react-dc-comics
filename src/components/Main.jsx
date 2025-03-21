@@ -5,8 +5,11 @@ export default function Main() {
     return (
         <main>
 
-            <div className="container_contents">
-                <div className="content">
+            <div className="container_jumbotron">
+                <div className="jumbotron">
+                    <div className="label">
+                        <h3>CURRENT SERIES</h3>
+                    </div>
                 </div>
             </div>
 
