@@ -151,9 +151,12 @@ Main {
       gap: 1.5rem;
       list-style: none;
 
+      li {
+        width: 20%;
+      }
+
       a {
         display: flex;
-        justify-content: center;
         align-items: center;
         gap: 1rem;
         text-decoration: none;
@@ -161,7 +164,8 @@ Main {
         color: var(--dc-light);
 
         img {
-          width: 20%;
+          height: 3rem;
+          width: auto;
         }
       }
     }
