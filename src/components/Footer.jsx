@@ -47,9 +47,12 @@ export default function () {
                             <li><a href="">DC Power visa</a></li>
                         </ul>
                     </div>
-                    <div className="bg_logo">
-                    </div>
                 </div>
+
+                <div className="bg_logo">
+                    <img src="/img/dc-logo-bg.png" alt="" />
+                </div>
+
             </div>
 
             <div className="container_down">

@@ -17,6 +17,7 @@ body {
 }
 
 header {
+
   .flex-container {
     width: 80%;
     margin: auto;
@@ -50,8 +51,10 @@ header {
 Main {
 
   .container_contents {
-    background-color: var(--dc-dark);
-    min-height: 130px;
+
+    background-image: url(/img/jumbotron.jpg);
+    background-size: cover;
+    height: 40vh;
     display: flex;
     align-items: center;
 
@@ -69,12 +72,15 @@ Main {
 
   .container_shop {
     background-color: var(--dc-primary);
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .shop {
       width: 80%;
       margin: auto;
       padding: 1rem;
-      min-height: 150px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -102,20 +108,24 @@ Main {
 
 footer {
 
-
   .container_up {
     background-image: url(/img/footer-bg.jpg);
     background-size: cover;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
 
     .footer_up {
       width: 80%;
       margin: auto;
-      padding-top: 2rem;
-      min-height: 370px;
       display: flex;
       gap: 1.5rem;
 
+
       .col {
+        width: 10%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
 
         h3 {
           color: var(--dc-light);
@@ -132,12 +142,13 @@ footer {
         }
       }
 
-      .bg_logo {
-        width: 100%;
-        background-image: url('/img/dc-logo-bg.png');
-        background-repeat: no-repeat;
-      }
+    }
 
+    .bg_logo {
+      display: inline-block;
+      position: absolute;
+      top: -100px;
+      right: 10%;
     }
   }
 
