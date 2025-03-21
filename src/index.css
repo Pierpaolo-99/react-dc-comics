@@ -199,6 +199,12 @@ footer {
         ul {
           list-style: none;
 
+          li {
+            :hover {
+              text-decoration: underline;
+            }
+          }
+
           a {
             text-decoration: none;
             color: var(--dc-text_footer);
