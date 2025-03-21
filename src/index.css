@@ -70,6 +70,37 @@ Main {
 
   }
 
+  .comicsList {
+    background-color: var(--dc-dark);
+
+    .container {
+      width: 60%;
+      max-width: 1400px;
+      margin: auto
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -1rem
+    }
+
+    .col-2 {
+      width: calc((100% / 12) * 2);
+      padding: 1rem;
+
+      p {
+        color: var(--dc-light);
+        text-align: center;
+      }
+
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
   .container_shop {
     background-color: var(--dc-primary);
     height: 30vh;

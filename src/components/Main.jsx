@@ -1,3 +1,5 @@
+import ComicsList from "./ComicsList"
+
 export default function Main() {
 
     return (
@@ -5,8 +7,11 @@ export default function Main() {
 
             <div className="container_contents">
                 <div className="content">
-                    <h2>Content goes here</h2>
                 </div>
+            </div>
+
+            <div className="comicsList">
+                <ComicsList />
             </div>
 
             <div className="container_shop">
