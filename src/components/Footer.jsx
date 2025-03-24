@@ -1,4 +1,4 @@
-export default function ({ DCcomics }) {
+export default function ({ DCcomics, shop, DC, sites }) {
 
     return (
         <footer>
@@ -13,34 +13,25 @@ export default function ({ DCcomics }) {
                         </ul>
                         <h3>SHOP</h3>
                         <ul>
-                            <li><a href="">Shop DC</a></li>
-                            <li><a href="">Shop DC Collectibles</a></li>
+                            {
+                                shop.map(link => (<li key={link.id} > <a href={link.url}>{link.name}</a></li>))
+                            }
                         </ul>
                     </div>
                     <div className="col">
                         <h3>DC</h3>
                         <ul>
-                            <li><a href="">Terms of use</a></li>
-                            <li><a href="">Privacy police</a></li>
-                            <li><a href="">Ad choices</a></li>
-                            <li><a href="">Advertising</a></li>
-                            <li><a href="">Job</a></li>
-                            <li><a href="">Subscritions</a></li>
-                            <li><a href="">Talent Workshops</a></li>
-                            <li><a href="">CPSC Certificates</a></li>
-                            <li><a href="">Ratings</a></li>
-                            <li><a href="">Shop Help</a></li>
-                            <li><a href="">Contact us</a></li>
+                            {
+                                DC.map(link => (<li key={link.id} > <a href={link.url}>{link.name}</a></li>))
+                            }
                         </ul>
                     </div>
                     <div className="col">
                         <h3>SITES</h3>
                         <ul>
-                            <li><a href="">DC</a></li>
-                            <li><a href="">MAD magazine</a></li>
-                            <li><a href="">DC kids</a></li>
-                            <li><a href="">DC universe</a></li>
-                            <li><a href="">DC Power visa</a></li>
+                            {
+                                sites.map(link => (<li key={link.id} > <a href={link.url}>{link.name}</a></li>))
+                            }
                         </ul>
                     </div>
                 </div>
