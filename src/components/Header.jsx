@@ -11,7 +11,7 @@ export default function Header({ Menu }) {
 
                 <ul className="menu">
                     {
-                        Menu.map((item, index) => (<li key={index}><a href="">{item}</a></li>))
+                        Menu.map(link => (<li key={link.id}><a className={link.active ? "active" : ""} href={link.url}>{link.name}</a></li>))
                     }
 
                 </ul>
