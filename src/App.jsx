@@ -4,12 +4,13 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import Comics from './data/comics'
+import Menu from './data/menu'
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Header Menu={Menu} />
       <Main comics={Comics} />
       <Footer />
     </>

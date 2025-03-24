@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ Menu }) {
 
     return (
         <header>
@@ -10,16 +10,10 @@ export default function Header() {
                 </div>
 
                 <ul className="menu">
-                    <li><a href="">CHARACTERS</a></li>
-                    <li><a className="active" href="">COMICS</a></li>
-                    <li><a href="">MOVIES</a></li>
-                    <li><a href="">TV</a></li>
-                    <li><a href="">GAMES</a></li>
-                    <li><a href="">COLLECTIBLES</a></li>
-                    <li><a href="">VIDEOS</a></li>
-                    <li><a href="">FANS</a></li>
-                    <li><a href="">NEW</a></li>
-                    <li><a href="">SHOP</a></li>
+                    {
+                        Menu.map((item, index) => (<li key={index}><a href="">{item}</a></li>))
+                    }
+
                 </ul>
 
             </div>
