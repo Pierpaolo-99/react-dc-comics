@@ -5,6 +5,10 @@ import Main from './components/Main'
 import Footer from './components/Footer'
 import Comics from './data/comics'
 import Menu from './data/menu'
+import { DCcomics } from './data/footerLinks'
+console.log(DCcomics);
+
+
 
 function App() {
 
@@ -12,7 +16,7 @@ function App() {
     <>
       <Header Menu={Menu} />
       <Main comics={Comics} />
-      <Footer />
+      <Footer DCcomics={DCcomics} />
     </>
   )
 }

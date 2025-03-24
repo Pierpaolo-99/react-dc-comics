@@ -1,4 +1,4 @@
-export default function () {
+export default function ({ DCcomics }) {
 
     return (
         <footer>
@@ -7,13 +7,9 @@ export default function () {
                     <div className="col">
                         <h3>DC COMICS</h3>
                         <ul>
-                            <li><a href="">Characters</a></li>
-                            <li><a href="">Comics</a></li>
-                            <li><a href="">Movies</a></li>
-                            <li><a href="">Tv</a></li>
-                            <li><a href="">Games</a></li>
-                            <li><a href="">Videos</a></li>
-                            <li><a href="">News</a></li>
+                            {
+                                DCcomics.map(link => (<li key={link.id} > <a href={link.url}>{link.name}</a></li>))
+                            }
                         </ul>
                         <h3>SHOP</h3>
                         <ul>
